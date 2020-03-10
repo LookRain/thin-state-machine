@@ -1,0 +1,48 @@
+{
+  "name": "thin-state-machine",
+  "version": "0.0.1",
+  "description": "🎰A minimal implementation of a state machine interpreter and hooks to use it in React projects",
+  "keywords": [
+    "state machine",
+    "react"
+  ],
+  "author": "LookRain <brantscube@hotmail.com>",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/LookRain/thin-state-machine.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "scripts": {
+    "build": "tsc --declaration true",
+    "lint": "eslint './src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix && tsc -p 'tsconfig.json' --noEmit --pretty",
+    "lint:only": "eslint './src/**/*.{ts,tsx}' --fix",
+    "setup": "yarn install && yarn setup:build"
+  },
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-typescript": "^7.7.2",
+    "@types/react": "^16.9.19",
+    "eslint": "^6.8.0",
+    "jsdoc-babel": "^0.5.0",
+    "jsdoc-to-markdown": "^5.0.3",
+    "prettier": "^1.19.1",
+    "react": "^16.12.0",
+    "typescript": "^3.7.5"
+  }
+}
